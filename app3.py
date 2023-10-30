@@ -5,7 +5,7 @@ app = Flask(__name__)
 def index():
     nome = None
     if request.method == 'POST' and 'nome' in request.form:
-    nome = request.form['nome']
+     nome = request.form['nome']
     return render_template('index.html', nome=nome)
 
 if __name__ == '__main__':
